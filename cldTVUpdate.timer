@@ -1,0 +1,9 @@
+[Unit]
+Description=cldTV Update timer
+
+[Timer]
+OnBootSec=120min
+OnUnitActivateSec=120min
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Manage cldTV cleanup on shutdown
+
+[Service]
+Type=oneshot
+RemainAfterExit=true
+ExecStop=/bin/bash /home/pi/cldTVCleanup.sh
+
+[Install]
+WantedBy=multi-user.target

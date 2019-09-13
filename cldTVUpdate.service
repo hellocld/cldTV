@@ -1,0 +1,6 @@
+[Unit]
+Description=Update the cldTV video library
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/pi/cldTVUpdate.sh
